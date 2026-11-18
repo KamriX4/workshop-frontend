@@ -96,7 +96,7 @@ const services = [
               color="neutral"
               variant="outline"
               icon="i-lucide-search"
-              class="justify-center"
+              class="hidden sm:inline-flex bg-(--ui-bg-accented)/70 hover:bg-(--ui-bg-accented) text-(--ui-text)"
             >
               Śledź swoje zlecenie
             </UButton>

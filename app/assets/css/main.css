@@ -2,6 +2,8 @@
 @import "@nuxt/ui";
 
 @theme {
+  --font-sans: 'Outfit', sans-serif;
+
   --color-fire-50: #fff5ed;
   --color-fire-100: #ffe8d4;
   --color-fire-200: #ffcca8;
@@ -16,6 +18,7 @@
 }
 
 :root {
+  --ui-primary: var(--color-fire-500);
   --ui-bg: #f6f7f9; /* Główne tło strony (zamiast rażącego #ffffff) */
   --ui-bg-muted: #edeff3; /* Sekcje wyróżnione (np. "Jak to działa" i stopka) */
   --ui-bg-elevated: #ffffff; /* Karty (UCard), inputy i modale wybijają się czystą bielą */
@@ -23,9 +26,11 @@
   --ui-border: #dfe2e8;
   --ui-text: #1f1f1f;
   --ui-text-muted: #444746;
+  --ui-text-inverted: #f6f7f9;
 }
 
 .dark {
+  --ui-primary: var(--color-fire-500);
   --ui-bg: #131314; /* Główne tło strony (zamiast ostrego #09090b) */
   --ui-bg-muted: #1b1c1d; /* Delikatnie jaśniejsze sekcje (np. "Jak to działa") */
   --ui-bg-elevated: #1e1f20; /* Karty (UCard), modale i inputy */
@@ -33,4 +38,11 @@
   --ui-border: #2e3033;
   --ui-text: #e3e3e3;
   --ui-text-muted: #c4c7c5;
+  --ui-text-inverted: #e3e3e3;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

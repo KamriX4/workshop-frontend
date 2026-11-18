@@ -1,4 +1,6 @@
 {
   "printWidth": 120,
-  "htmlWhitespaceSensitivity": "ignore"
+  "htmlWhitespaceSensitivity": "ignore",
+  "semi": false,
+  "singleQuote": true
 }
